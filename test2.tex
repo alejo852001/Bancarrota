@@ -1,0 +1,134 @@
+\documentclass[12pt]{beamer}
+\usetheme{CambridgeUS}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{booktabs}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{comment}
+
+
+%% code information
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  classoffset=1,
+  morekeywords={True,False}, keywordstyle=\color{munsell}, 
+  classoffset=0, 
+  keywordstyle=\color{blue},  
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{PUJ3},
+  numberstyle=\tiny\color{gray},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4,
+}
+
+\author{Diego}
+\title{Bankruptcy prediction using Random forest and Adaboost}
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{} 
+%\logo{} 
+\institute{BIT} 
+%\date{} 
+\subject{Education and Quantile Regression} 
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+%\begin{frame}
+%\tableofcontents
+%\end{frame}
+
+
+\begin{frame}{Introduction}
+Several studies in Colombia evidence that sex, ethnic, and age could be important variables to determine the educational attainment.
+\end{frame}
+
+
+\begin{frame}{Justification}
+Hanushek shows that economic growth rely on in human capital aggregate levels, this last measure with standardized test (PISA).
+\end{frame}
+
+\begin{frame}{Methodology}{Data}
+This work uses the official available public data in the ICFES web site 
+\end{frame}
+
+
+\begin{frame}{Methodology}{Model}
+\begin{equation}
+\begin{align*}
+y = \beta_{0} + \beta_{1}  +... + u_{i}
+\end{align*}
+\end{equation}
+\end{frame}
+
+
+\begin{frame}{Performance assessment}
+% Please add the following required packages to your document preamble:
+%
+\begin{table}[]
+\centering
+\resizebox{5cm}{!}{%
+\begin{tabular}{lll}
+\midrule
+Metric &                            &    \\
+MAE    & $\Vert \hat{y} - y \Vert$  & 10 \\
+RSE    & $ \sum (\hat{y} - y )^{2}$ & 11
+\bottomrule
+\end{tabular}
+}
+\caption{Own elaboration}
+\label{tab:my-table}
+\end{table}
+\end{frame}
+
+
+\begin{comment}
+
+
+\begin{frame}
+\begin{table}
+\input{RESULTADOS.tex}
+\end{table}
+\end{frame}
+
+\begin{frame}{Graph}
+\includegraphics[scale=0.4]{scatter.eps}
+According to the last figure there is a positive relation between var2 and var3.
+\end{frame}
+
+
+\end{comment}
+
+\begin{frame}{Add equation inside text}
+Suppose that $\bm{X} \sim N(0,1)$ therefore we can model with 
+
+\end{frame}
+
+\begin{frame}[fragile]{Code python implementation}
+\begin{lstlisting}
+for x in range(1,10):
+	print(x)
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{verbatim}
+Init K centroids as K points:
+	Update centroids with mean of each variable
+\end{verbatim}
+\end{frame}
+
+
+\end{document}

@@ -1,0 +1,4 @@
+\begin{verbatim}
+Init K centroids as K points:
+	Update centroids with mean of each variable
+\end{verbatim}
